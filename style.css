@@ -196,12 +196,12 @@ ul,ol{
 	font-size: 300px;
 	line-height: 0;
 	color: rgba(225, 198, 153, .8);
-	font-family: 'Cinzel', sans-serif;
+	font-family: 'Cinzel', serif;
 	animation: logo-letter 1.5s;
 }
 
 .intro p{
-	font-family: 'Cinzel', sans-serif;
+	font-family: 'Cinzel', serif;
 	line-height: 0;
 	letter-spacing: 4px;
 	animation: intro-p 1.5s;
@@ -284,7 +284,7 @@ footer{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	font-family: 'Cinzel', sans-serif;
+	font-family: 'Cinzel', serif;
 	font-size: 2.5rem;
 	letter-spacing: 3px;
 	text-transform: uppercase;
