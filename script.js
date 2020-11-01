@@ -4,4 +4,4 @@ $(document).ready(function(){
           $('.mySideNav').toggleClass('open');
           $('.sidebarBtn').toggleClass('toggle');
       })
-    })
+    });
