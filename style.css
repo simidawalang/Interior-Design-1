@@ -1,0 +1,334 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+	height: 100%;
+}
+
+body{
+	font-weight: 300;
+}
+
+ul,ol{
+	list-style: none;
+	/*For any list that doesn't have a class of nav-list*/
+}
+
+
+/*-------------------------*HOME PAGE*---------------------------*/
+
+#home-body{
+	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+	url('img/dubai-1.jpeg') center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.breadcrumbs{
+	padding: 10px 3rem;
+	margin-top: 25px;
+	background: rgba(0,0,0,.4);
+	align-items: center;
+}
+
+.inactive{
+	opacity: .3;
+}
+
+.active{
+	opacity: 1;
+	font-weight: bold;
+}
+/*Navigation Menu*/
+
+.mySideNav{
+	background-color: rgba(225, 198, 153, .8);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0;
+	position: fixed;
+	height: 100vh;
+	top: 0;
+	z-index: 900;
+}
+
+.nav-list{
+	display: block;
+	text-align: center;
+}
+
+.nav-item{
+	padding: 20px 0;
+	font-size: 15px;
+	list-style: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;		
+}
+
+.nav-link{
+	color: #fff;
+	height: 40px;
+}
+.nav-link:hover{
+	letter-spacing: 5px;
+	color: #fff;
+	transition: .5s;
+}
+
+/*............................*/
+.sidebarBtn{
+  position: absolute;
+  left: 10px;
+  align-content: center;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.sidebarBtn span{
+  display: block;
+  width: 35px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  top: 24px;
+  transition: .3s;
+}
+
+.sidebarBtn span:before{
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  transition: .3s;
+}
+
+.sidebarBtn span:after{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  transition: .3s;
+}
+
+/*Hamburger menu animation*/
+.sidebarBtn.toggle span{
+	background: transparent;
+
+}
+
+.sidebarBtn.toggle span:before{
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.sidebarBtn.toggle span:after{
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+/*Social media links in navigation menu*/
+.social-links{
+	margin-top: 30px;
+}
+
+.social-links a{
+	align-items: center;
+	color: #fff;
+	opacity: .75;
+	height: 35px;
+	width: 35px;
+	letter-spacing: 0;
+}
+
+.social-links a i{
+	padding: 8px 8px;
+	font-size: 20px;
+	border: 1px solid rgba(255,255,255,.45);
+	border-radius: 50%;
+	margin: 0px 10px;
+}
+ .social-links a i:hover{
+ 	border: 1px solid rgba(255,255,255,1);
+ 	transition: .1s ease-in-out;
+ }
+/*Main page content*/
+.main{
+	margin-left: 25vw;
+	display: grid;
+}
+
+.home-container{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+
+/*Centered Name and Logo*/
+
+.intro{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+.logo-letter{
+	font-size: 300px;
+	line-height: 0;
+	color: rgba(225, 198, 153, .8);
+	font-family: 'Cinzel', sans-serif;
+	animation: logo-letter 1.5s;
+}
+
+.intro p{
+	font-family: 'Cinzel', sans-serif;
+	line-height: 0;
+	letter-spacing: 4px;
+	animation: intro-p 1.5s;
+}
+
+footer{
+	position: fixed;
+	background: rgba(0,0,0,.7);
+	bottom: 0;
+	padding: 10px 0;
+	width: 75%;
+	text-align: center;
+}
+
+@keyframes intro-p{
+	0%{
+		opacity: 0;
+		letter-spacing: 0px;
+		
+	}
+
+	100%{
+		opacity: 1;
+		letter-spacing: 4px;
+	}
+}
+
+@keyframes logo-letter{
+	0%{
+		opacity: 0;
+	}
+
+	95%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 0.6;
+	}
+}
+
+
+/*------------------- ABOUT PAGE ---------------------*/
+#about-body{
+	background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+	url('img/pexels-photo-1267438.jpeg') center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.about-text{
+	padding: 5rem 3rem;
+}
+
+
+/*------------------- PROJECTS ---------------------*/
+#project-body{
+	background: grey;
+	/*background:
+	url('img/hongkong-1.jpeg') center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;*/
+}
+.project-container{
+	position: relative;
+	text-align: center;
+	color: rgb(225, 198, 153);
+}
+
+
+.project img{
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.project .title-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-family: 'Cinzel', sans-serif;
+	font-size: 2.5rem;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	padding: 3px 10px;
+	background: rgba(0,0,0,.8);
+}
+  /*-----------------MEDIA QUERIES------------------*/
+
+@media(min-width: 768px){
+	.mySideNav{
+		width: 25vw;
+	}
+
+	.sidebarBtn{
+		display: none;
+		transform: scale(0;);
+	}
+}
+
+/* anything smaller than a tablet*/
+@media(max-width: 767px){
+	.main{
+		margin-left: 0;
+	}
+
+	.mySideNav{
+		width: 50vw;
+		background-color: rgba(225, 198, 153, .95);
+		transition: .3s;
+		left: -50vw;
+	}
+
+	.open{
+		left: 0vw;
+	}
+
+	.nav-item{
+		padding: 5px 0;
+	}
+	
+
+	.social-links a i{
+		padding: 5px 5px;
+		margin: 0px 5px;
+		font-size: 158x;
+	}
+
+	footer{
+		width: 100%;
+	}
+}
